@@ -231,7 +231,7 @@ func (ds *Datastore) HandleCommand(rawCommand string) (interface{}, int) {
 		return nil, status
 
 	default:
-		return nil, http.StatusBadRequest
+		return "Invalid Command", http.StatusBadRequest
 	}
 }
 
